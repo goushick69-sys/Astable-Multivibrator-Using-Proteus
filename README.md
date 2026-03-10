@@ -3,15 +3,12 @@ ASTABLE MULTIVIBRATOR USING 555 TIMER Using Proteus
 ## Aim
 To design and simulate an Astable Multivibrator using NE555 in Proteus Design Suite and observe the continuous square wave output.
 ## Apparatus Required
-•	NE555 Timer IC
-•	Resistor R1 = 10 kΩ
-•	Resistor R2 = 100 kΩ
-•	Capacitor C = 0.01 µF
-•	DC Power Supply (5V or 9V)
-•	CRO / Oscilloscope
-•	Connecting wires
+<img width="463" height="214" alt="image" src="https://github.com/user-attachments/assets/ace629d7-ba57-4e27-b821-02a87554de13" />
+
 ## Circuit Diagram
 Pin Configuration of 555 Timer:
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3b165290-27bb-41ee-a27a-2f638f87e297" />
+
 •	Pin 1 → Ground
 •	Pin 2 → Trigger
 •	Pin 3 → Output
@@ -37,8 +34,11 @@ Pin Configuration of 555 Timer:
 6.	Observe square wave output at Pin 3.
 7.	Measure time period and frequency.
 ## Tabulation
-S.No	        R1 (kΩ)	      R2 (kΩ)	       C (µF)	        Theoretical Frequency	          Practical Frequency
+<img width="675" height="60" alt="image" src="https://github.com/user-attachments/assets/9f78a57e-c36a-4bf7-a9f6-379e1323130e" />
+
 ## Waveforms
+<img width="1380" height="881" alt="image" src="https://github.com/user-attachments/assets/fdae6332-21c3-4378-9ed2-607c447dfab1" />
+
 •	Output (Pin 3) → Square wave
 •	Capacitor voltage → Exponential charging & discharging waveform
 ## Result
@@ -47,12 +47,30 @@ A continuous square wave output was obtained.
 The practical frequency closely matches the theoretical frequency.
 ## Conclusion
 •	The 555 timer works as a free-running oscillator in astable mode.
+
 •	Frequency depends on R1, R2, and C values.
+
 •	Increasing R or C decreases frequency.
+
 •	Used in clock generation, LED flashing, and tone generation.
+
 ## Viva Questions
-1.	What are the operating modes of 555 timer?
-2.	What are the threshold levels in astable mode?
-3.	Write the frequency formula.
-4.	What is duty cycle?
-5.	What happens if R2 increases?
+1. What are the operating modes of 555 timer?
+
+The 555 timer operates in three modes: monostable, astable, and bistable mode. These modes are used for one-shot pulse, continuous oscillation, and flip-flop operation.
+
+2. What are the threshold levels in astable mode?
+
+In astable mode, the capacitor voltage varies between 1/3 Vcc and 2/3 Vcc. These levels control the charging and discharging of the capacitor.
+
+3. Write the frequency formula.
+
+The frequency of astable multivibrator is given by f = 1.44 / ((R1 + 2R2)C). It depends on resistor and capacitor values.
+
+4. What is duty cycle?
+
+Duty cycle is the percentage of time the output remains HIGH in one cycle. It indicates the ratio of ON time to total time.
+
+5. What happens if R2 increases?
+
+If R2 increases, the charging and discharging time increases. So the frequency decreases and time period increases.
